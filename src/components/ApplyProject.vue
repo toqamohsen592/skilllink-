@@ -101,13 +101,13 @@ export default {
     submitProposal() { 
       if (this.formData.agreeRequirements && this.formData.agreeBinding && this.formData.agreeTerms) { 
         alert('Your proposal has been submitted successfully!'); 
-        this.$router.push('/'); 
+        this.$router.push('/student-home'); 
       } else { 
         alert('Please agree to all terms and conditions.'); 
       } 
     },
     cancel() { 
-      this.$router.push('/'); 
+      this.$router.push('/student-home'); 
     }
   }
 }

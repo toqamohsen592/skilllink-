@@ -436,7 +436,7 @@ export default {
     toggleChatbot() { this.showChatbot = !this.showChatbot; },
     closeChatbot() { this.showChatbot = false; },
     
-    goHome() { this.$router.push('/'); },
+    goHome() { this.$router.push('/student-home'); },
     // ✅ تم شيل دالة goToClientHome من صفحة الطالب
     
     goToCommunity() { this.$router.push('/community'); },

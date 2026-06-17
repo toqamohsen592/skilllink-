@@ -68,7 +68,7 @@ export default {
     }
   },
   methods: {
-    goBack() { this.$router.push('/'); },
+    goBack() { this.$router.push('/student-home'); },
     goToCommunity() { this.$router.push('/community'); },
     goToProfile() { this.$router.push('/profile'); this.showMenu = false; },
     goToSettings() { this.$router.push('/settings'); this.showMenu = false; },

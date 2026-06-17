@@ -100,7 +100,7 @@ export default {
           return
         }
         alert('Login successful!')
-        this.$router.push(this.formData.type === 'client' ? '/client-home' : '/')
+        this.$router.push(this.formData.type === 'client' ? '/client-home' : '/student-home')
       } catch (e) {
         alert(e.response?.data?.message || 'Invalid email or password')
       } finally {

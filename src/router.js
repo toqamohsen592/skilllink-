@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// 🔹 Student Pages
+// 🔹 Landing & Student Pages
+import Landing from './components/Landing.vue'
 import Home from './Home.vue'
 import Community from './Community.vue'
 import Profile from './components/Profile.vue'
@@ -35,8 +36,8 @@ import VerifyCode from './views/VerifyCode.vue'
 import PasswordSuccess from './views/PasswordSuccess.vue'
 
 const routes = [
-  // ✅ أول صفحة تظهر هي صفحة الطالب (الرئيسية)
-  { path: '/', name: 'StudentHome', component: Home },
+  // ✅ الصفحة الرئيسية (Landing Page)
+  { path: '/', name: 'Landing', component: Landing },
 
   // Auth
   { path: '/login', name: 'Login', component: Login },
@@ -53,7 +54,7 @@ const routes = [
   { path: '/password-success', name: 'PasswordSuccess', component: PasswordSuccess },
   
   // 🔹 Student Dashboard & Pages
-  { path: '/student-home', name: 'StudentHomeRedirect', redirect: '/' },
+  { path: '/student-home', name: 'StudentHome', component: Home },
   { path: '/community', name: 'Community', component: Community },
   { path: '/profile', name: 'Profile', component: Profile },
   { path: '/settings', name: 'Settings', component: Settings },
