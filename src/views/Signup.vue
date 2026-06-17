@@ -114,12 +114,12 @@ export default {
 .logo-s { color: #0C9892; font-family: 'Dancing Script', cursive; } .logo-killlink { color: #000; }
 .signup-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; position: relative; padding: 20px; }
 
-.character { position: absolute; top: 50%; width: 300px; z-index: 10; pointer-events: none; }
-.left-character { left: 50%; transform: translate(-240px, -50%); }
-.right-character { left: 50%; transform: translate(240px, -50%); }
+.character { position: absolute; top: 50%; width: 300px; z-index: 20; pointer-events: none; }
+.left-character { right: 50%; transform: translate(-38px, -50%); }
+.right-character { left: 50%; transform: translate(38px, -50%); }
 .character img { width: 100%; height: auto; display: block; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.15)); }
 
-.signup-card { background: white; border-radius: 30px; padding: 50px 60px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); width: 100%; max-width: 500px; text-align: center; position: relative; z-index: 20; }
+.signup-card { background: white; border-radius: 30px; padding: 50px 60px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); width: 100%; max-width: 500px; text-align: center; position: relative; z-index: 5; overflow: visible; }
 .title { color: #0C9892; font-size: 32px; font-weight: 700; margin-bottom: 30px; }
 .input-group { position: relative; margin-bottom: 20px; }
 .input-field { width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 30px; font-size: 16px; outline: none; transition: 0.3s; }
